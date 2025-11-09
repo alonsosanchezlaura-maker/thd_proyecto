@@ -58,13 +58,13 @@ Cada alumno o equipo creará **una rama por criterio**, documentando el avance y
 
 | Criterio | Nombre sugerido de rama | Documento principal |
 |-----------|-------------------------|----------------------|
-| a | `feature/thd-identificacion` | `/docs/00_THD_Identificacion.md` |
-| b | `feature/>thd-productos-servicios` | `/tareas/tarea_b_productos_servicios.md` |
-| c | `feature/sostenibilidad` | `/tareas/tarea_c_sostenibilidad.md` |
-| d | `feature/nuevos-mercados` | `/tareas/tarea_d_nuevos_mercados.md` |
-| e | `feature/it-ot-analisis` | `/tareas/tarea_e_it_ot.md` |
-| f | `feature/mejoras-it-ot` | `/tareas/tarea_f_mejoras_it_ot.md` |
-| g | `docs/informe-final` | `/docs/INFORME_FINAL.md` |
+| a | `tarea/thd-identificacion` | `/docs/00_THD_Identificacion.md` |
+| b | `tarea/thd-productos-servicios` | `/tareas/tarea_b_productos_servicios.md` |
+| c | `tarea/sostenibilidad` | `/tareas/tarea_c_sostenibilidad.md` |
+| d | `tarea/nuevos-mercados` | `/tareas/tarea_d_nuevos_mercados.md` |
+| e | `tarea/it-ot-analisis` | `/tareas/tarea_e_it_ot.md` |
+| f | `tarea/mejoras-it-ot` | `/tareas/tarea_f_mejoras_it_ot.md` |
+| g | `tarea/informe-final` | `/docs/INFORME_FINAL.md` |
 
 🔖 Convención: en trabajo grupal usar `feature/equipoX-criterio`.
 
