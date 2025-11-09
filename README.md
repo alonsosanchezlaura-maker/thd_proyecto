@@ -21,7 +21,7 @@
 ## 🧱 Estructura del repositorio
 
 ```
-proyecto_thd_metricaV3/
+proyecto_thd/
 │
 ├── README.md                  # Este archivo
 ├── tareas/                    # Actividades secuenciales por criterio (a–g)
