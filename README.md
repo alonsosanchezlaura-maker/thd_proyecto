@@ -15,7 +15,7 @@
 | **e)** | Se ha analizado la implicación de THD tanto en la parte de negocio como en la parte de planta. |
 | **f)** | Se han identificado las mejoras producidas debido a la implantación de las tecnologías habilitadoras en relación con los entornos IT y OT. |
 | **g)** | Se ha elaborado un informe que relacione las tecnologías con sus características y áreas de aplicación. |
----
+
 
 
 ## 🧱 Estructura del repositorio
