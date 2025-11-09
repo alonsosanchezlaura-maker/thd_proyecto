@@ -32,17 +32,7 @@ proyecto_thd_metricaV3/
 │   ├── tarea_e_it_ot.md
 │   ├── tarea_f_mejoras_it_ot.md
 │   └── tarea_g_informe_final.md
-│
-├── docs/                      # Documentación según Métrica V3
-│   ├── 00_THD_Identificacion.md
-│   └── INFORME_FINAL.md
-│
-└── src/                       # Código o prototipos web (HTML, PHP, JSP…)
-    ├── web/
-    │   └── index.html
-    └── api/
-        └── ejemplo.php
-```
+
 
 
 ## 🚀 Flujo de trabajo (ramas)
