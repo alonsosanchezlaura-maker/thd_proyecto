@@ -34,8 +34,7 @@ proyecto_thd/
 │   ├── tarea_e_it_ot.md
 │   ├── tarea_f_mejoras_it_ot.md
 │   └── tarea_g_informe_final.md
----
-
+```
 
 ## 🚀 Flujo de trabajo (ramas)
 
