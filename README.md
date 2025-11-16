@@ -1,6 +1,13 @@
 ## 🎯 Resultado de aprendizaje
 
 > **RA 2.** Caracteriza las tecnologías habilitadoras digitales necesarias para la adecuación/transformación de las empresas a entornos digitales, describiendo sus características y aplicaciones.
+# Proyecto THD
+
+**Versión de prueba para workflow**  
+Bienvenido al proyecto THD. Aquí se muestran las tareas y documentos de cada criterio.
+
+---
+
 
 ---
 
