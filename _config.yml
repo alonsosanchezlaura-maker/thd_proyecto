@@ -1,29 +1,31 @@
-name: Ruby
+name: Ruby CI
 
 on:
   push:
-    branches: [ main ]
+    branches: [ main, master ]
   pull_request:
-    branches: [ main ]
+    branches: [ main, master ]
 
 jobs:
   build:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout code
+        uses: actions/checkout@v4
 
-      - name: Set up Ruby
+      - name: Set up Ruby 2.7
         uses: ruby/setup-ruby@v1
         with:
           ruby-version: '2.7'
           bundler-cache: true
 
-      - name: Install old Bundler (2.4.22)
+      - name: Install Bundler 2.4.22
         run: gem install bundler -v 2.4.22
 
-      - name: Install dependencies
+      - name: Install gems
         run: bundle _2.4.22_ install --jobs 4 --retry 3
 
       - name: Run tests
         run: bundle _2.4.22_ exec rake
+        # Si no usas rake, cambia por: bundle _2.4.22_ exec rspec
