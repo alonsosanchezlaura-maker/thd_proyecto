@@ -1,0 +1,5 @@
+title: Mi Sitio Jekyll
+description: Un sitio simple para GitHub Pages
+baseurl: ""
+url: "https://alonsosanchezlaura-maker.github.io" alonsosanchezlaura-maker
+theme: jekyll-theme-primer
