@@ -1,0 +1,29 @@
+name: Construir sitio Jekyll
+
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Descargar código
+        uses: actions/checkout@v4
+
+      - name: Instalar Ruby 2.7
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '2.7'
+
+      - name: Instalar Bundler 2.4.22
+        run: gem install bundler -v 2.4.22
+
+      - name: Instalar gemas
+        run: bundle _2.4.22_ install --jobs 4 --retry 3
+
+      - name: Construir sitio con Jekyll
+        run: bundle _2.4.22_ exec jekyll build
