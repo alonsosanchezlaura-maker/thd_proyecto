@@ -1,37 +1,28 @@
-name: GitHub Pages Build
+name: GitHub Pages
 
 on:
   push:
     branches:
       - main
-  pull_request:
 
 jobs:
   build:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v3
-
-      - uses: ruby/setup-ruby@v1
-        with:
-          ruby-version: 2.7.8
-
-      - name: Install Bundler
-        run: gem install bundler -v 2.4.22
-
-      - name: Install Jekyll & GitHub Pages
-        run: |
-          gem install jekyll -v 3.10.0
-          gem install github-pages -v 232
-
-      - name: Build Jekyll site
-        run: |
-          echo ".odt" >> docs/.jekyllignore
-          bundle exec jekyll build -s docs -d docs/_site
-
-      - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v6
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./docs/_site
+    - uses: actions/checkout@v3
+    - name: Set up Ruby
+      uses: ruby/setup-ruby@v1
+      with:
+        ruby-version: '3.2'
+    - name: Install dependencies
+      run: |
+        gem install bundler -v 2.4.22
+        bundle install
+    - name: Build site
+      run: bundle exec jekyll build -d docs/_site
+    - name: Deploy to GitHub Pages
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: docs/_site
