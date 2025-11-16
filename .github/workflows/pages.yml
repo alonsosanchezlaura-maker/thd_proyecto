@@ -1,32 +1,29 @@
-name: Build and deploy Jekyll site
+name: Construir sitio Jekyll
 
 on:
   push:
-    branches:
-      - main  # Cambia si tu rama principal tiene otro nombre
+    branches: [ main, master, tarea/informe-final ]
+  pull_request:
+    branches: [ main, master, tarea/informe-final ]
 
 jobs:
   build:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v4
+      - name: Descargar código
+        uses: actions/checkout@v4
 
-    - name: Setup Ruby
-      uses: ruby/setup-ruby@v1
-      with:
-        ruby-version: '2.7'
+      - name: Instalar Ruby 2.7
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '2.7'
 
-    - name: Install dependencies
-      run: |
-        gem install bundler
-        bundle install
+      - name: Instalar Bundler 2.4.22
+        run: gem install bundler -v 2.4.22
 
-    - name: Build the site
-      run: bundle exec jekyll build --destination ./_site
+      - name: Instalar dependencias
+        run: bundle _2.4.22_ install --jobs 4 --retry 3
 
-    - name: Deploy to GitHub Pages
-      uses: peaceiris/actions-gh-pages@v3
-      with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: ./_site
+      - name: Construir sitio
+        run: bundle _2.4.22_ exec jekyll build
