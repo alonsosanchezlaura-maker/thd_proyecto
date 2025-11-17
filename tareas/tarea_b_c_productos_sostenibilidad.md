@@ -3,6 +3,7 @@
 ## 🏢 Empresa seleccionada
 Breve descripción de la empresa real o ficticia.
 
+Ficticia: Panadería Maite
 ---
 
 ## 🧩 Relación entre THD y productos/servicios
@@ -56,3 +57,4 @@ Resume brevemente los casos y explica cómo podrían aplicarse a tu empresa.
 
 ## 📚 Fuentes consultadas
 (Enlaces a las noticias o informes usados)
+
